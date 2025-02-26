@@ -1,4 +1,7 @@
 //Kailyn Kim  2/25/25 Digits.java Prints the digits of the number
+
+import java.util.*;
+
 public class Digits{
     public static void main(String[]args) {
         int number;
@@ -6,7 +9,9 @@ public class Digits{
         int tens;
         int ones;
         int thousands;
-        number = 2583;
+        Scanner input= new Scanner(System.in);
+        System.out.println("Enter a four digit number: ");
+        number = input.nextInt();
         ones = number % 10;
         tens = (number/10) %10;
         hundreds = (number/10) / 10 %10;
